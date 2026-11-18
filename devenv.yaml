@@ -1,0 +1,14 @@
+inputs:
+  nixpkgs:
+    url: path:./replacement
+  devenv:
+    follows: nixpkgs
+  a:
+    url: path:./a
+    inputs:
+      direct:
+        follows: nixpkgs
+      b:
+        inputs:
+          c:
+            follows: nixpkgs

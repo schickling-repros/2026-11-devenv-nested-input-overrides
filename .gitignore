@@ -1,0 +1,6 @@
+.devenv*
+!devenv.nix
+!devenv.yaml
+!devenv.lock
+issue.md
+upstream-*

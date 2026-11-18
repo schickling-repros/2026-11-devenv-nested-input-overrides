@@ -1,0 +1,73 @@
+{
+  "nodes": {
+    "a": {
+      "inputs": {
+        "b": "b",
+        "direct": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "path": "a",
+        "type": "path"
+      },
+      "original": {
+        "path": "a",
+        "type": "path"
+      },
+      "parent": []
+    },
+    "b": {
+      "inputs": {
+        "c": "c"
+      },
+      "locked": {
+        "path": "./b",
+        "type": "path"
+      },
+      "original": {
+        "path": "./b",
+        "type": "path"
+      },
+      "parent": [
+        "a"
+      ]
+    },
+    "c": {
+      "locked": {
+        "path": "./c",
+        "type": "path"
+      },
+      "original": {
+        "path": "./c",
+        "type": "path"
+      },
+      "parent": [
+        "a",
+        "b"
+      ]
+    },
+    "nixpkgs": {
+      "locked": {
+        "path": "replacement",
+        "type": "path"
+      },
+      "original": {
+        "path": "replacement",
+        "type": "path"
+      },
+      "parent": []
+    },
+    "root": {
+      "inputs": {
+        "a": "a",
+        "devenv": [
+          "nixpkgs"
+        ],
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
