@@ -41,4 +41,4 @@ The checked-in `devenv.lock` is the observed output, including the unwanted sepa
 
 ## Related issue
 
-Issue URL will be recorded after filing.
+https://github.com/cachix/devenv/issues/3378
